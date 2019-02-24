@@ -1,0 +1,26 @@
+<html>
+<head>
+<style type="text/css">
+  html { height:100%;}
+  body {height: 100%;}
+  #container {
+    min-height: 100%;
+    min-width: 100%;
+    margin: auto;
+  }
+</style>
+</head>
+<body>
+<div id="container"></div>
+<script src="sigma.min.js"></script>
+<script src="sigma.parsers.json.min.js"></script>
+<script>
+  sigma.parsers.json('http://localhost:9876/data', {
+    container: 'container',
+    settings: {
+      defaultNodeColor: '#ec5148'
+    }
+  });
+</script>
+</body>
+</html>
